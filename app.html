@@ -32,16 +32,24 @@
           <input type="text">
         </div>
       </fieldset>
-      <input type="submit" value="送信" onclick="send()">
-      
+      <input type="submit" value="送信" onclick="ques()">
+       
       <script>
+        function ques(){
+          if(window.confirm("申し込む？？")){
+            ;
+          }else{
+             send();          
+          }
+        }
+      
         function send(){
           alert("それはできません")
         }
       </script>
 
 
-     <button> onclick="location.href='./index.html'">もどる</button>
+     <button> <onclick="location.href='./index.html'">もどる</button>
      <h6>こんなものないお</h6>
    </body>
 </html>
