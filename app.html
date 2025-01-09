@@ -32,12 +32,16 @@
           <input type="text">
         </div>
       </fieldset>
-      <input type="submit" value="送信" onclick="ques()">
+      <input type="button" value="送信" onclick="ques()">
        
       <script>
         function ques(){
           if(window.confirm("申し込む？？")){
-            ;
+            alert("かんりょう！！")
+            setTimeout(() => {
+              location.href = "./index.html";
+            }, 3000);
+            
           }else{
              send();          
           }
